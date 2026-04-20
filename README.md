@@ -95,12 +95,18 @@ Iniciar backend con:
 php artisan serve
 
 Iniciar frontend con:
-
 npm run dev
+
 Abrir la aplicación en el navegador.
+
+
 Gestionar vendedores, ventas y reglas de comisión.
+
+
 Visualizar cálculo automático de comisiones por rango de fechas.
-🔮 Estado del proyecto
+
+
+## 🔮 Estado del proyecto
 Frontend desplegado en Vercel
 Backend en entorno local (modo desarrollo)
 Base de datos MySQL local
@@ -116,4 +122,5 @@ Estudiante de Ingeniería de Software
 
 ## 📞Contacto
 correo: pablovargas44@gmail.com
+
 Linkedin: https://www.linkedin.com/in/pablo-francisco-vargas-barriga-09198b335/
