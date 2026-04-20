@@ -1,0 +1,205 @@
+
+/* =========================
+   GLOBAL RESET
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #f5f7fb;
+  color: #111827;
+  font-family: system-ui, -apple-system, Arial, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+.dashboard * {
+  box-sizing: border-box;
+}
+
+/* =========================
+   DASHBOARD BASE
+========================= */
+.dashboard {
+  padding: 24px;
+  min-height: 100vh;
+  color: #111827;
+}
+
+/* =========================
+   HEADER
+========================= */
+.dashboard__header {
+  background: white;
+  padding: 28px;
+  border-radius: 14px;
+  margin-bottom: 22px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.dashboard__header h1 {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.dashboard__header p {
+  margin: 0;
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+/* =========================
+   FILTROS
+========================= */
+.dashboard__filters {
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+  margin-bottom: 22px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.dashboard__filters h2 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+
+.filters__group {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* =========================
+   INPUTS (FIX IMPORTANTE)
+========================= */
+input {
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: white;
+  color: #111827;
+  outline: none;
+  transition: 0.2s;
+}
+
+/* 🔥 FIX CLAVE PARA DATEPICKER */
+input[type="date"] {
+  appearance: auto;
+  -webkit-appearance: auto;
+  -moz-appearance: auto;
+  position: relative;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 1;
+  filter: invert(0.3);
+}
+
+input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* =========================
+   BOTÓN
+========================= */
+button {
+  padding: 10px 14px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+/* =========================
+   KPIs
+========================= */
+.dashboard__kpis {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.kpi-card {
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+  flex: 1;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.kpi-card h3 {
+  margin: 0 0 6px 0;
+  font-size: 13px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.kpi-card p {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* =========================
+   TABLA
+========================= */
+.dashboard__table {
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.dashboard__table h2 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* HEADER TABLA */
+th {
+  text-align: left;
+  background: #f8fafc;
+  padding: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* CELDAS */
+td {
+  padding: 12px;
+  border-bottom: 1px solid #eef2f7;
+  font-size: 14px;
+  color: #374151;
+}
+
+/* hover */
+tr:hover {
+  background: #f9fafb;
+}
+
+/* =========================
+   TIPOGRAFÍA
+========================= */
+h1, h2, h3 {
+  color: #111827;
+}
